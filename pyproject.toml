@@ -6,6 +6,9 @@ authors = ["Sergey Kirichenko <whole-white-whale@yandex.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
+fire = "^0.6.0"
+langchain-community = "^0.2.11"
+langchain-core = "^0.2.29"
 python = "^3.12"
 
 [build-system]

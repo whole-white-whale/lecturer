@@ -12,11 +12,11 @@
 ollama pull llama3.1
 ```
 
-Собрать приложение удобнее всего с помощью Poetry:
+Собрать и установить приложение удобнее всего с помощью Poetry и pipx:
 
 ```bash
 poetry install && poetry build
-pip install dist/lecturer-0.1.0-py3-none-any.whl
+pipx install dist/lecturer-0.1.0-py3-none-any.whl
 ```
 
 ## Использование
@@ -24,5 +24,5 @@ pip install dist/lecturer-0.1.0-py3-none-any.whl
 Достаточно перенаправить вывод сообщений об ошибках компиляции:
 
 ```bash
-gcc ... |& python -m lecturer
+gcc ... |& lecturer
 ```

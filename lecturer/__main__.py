@@ -11,4 +11,4 @@ def cli():
 
 def run(*, model_name: str = "llama3.1"):
     for chunk in stream_chunks(error=sys.stdin.read(), model_name=model_name):
-        print(chunk, end="")
+        print(chunk, end="", flush=True)
